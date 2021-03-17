@@ -10,21 +10,35 @@
     <link rel="stylesheet" href="./style.css">
     
     <title>IAD - Interactive Art Discovery</title>   
-    
+    <link rel="shortcut icon" href="favicon.ico">
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet"> 
-
-
-
-
-
 </head>
+
 <body>
     <h1 class="m-3">IAD - Interactive Art Discovery</h1>
 
+    <div class="loading" id="js-loader">
+        <div class="loader"></div>
+    </div>
+    <div class="wrapper">
+        <!-- The canvas element is used to draw the 3D scene -->
+        <canvas id="c"></canvas>
+    </div>
+
     <!-- THREE JS -->
-    <script src="./src/three.js"></script>
+    <script src="./src/three.min.js"></script>
+
+    <!-- GLTF -->
+    <script src="./src/GLTFLoader.js"></script>
+
+    <!-- ORBIT CONTROLS -->
+    <script src="./src/OrbitControls.js"></script>
+
+    <!-- SCRIPT SCENE -->
     <script src="./script.js"></script>
+
 </body>
 </html>
