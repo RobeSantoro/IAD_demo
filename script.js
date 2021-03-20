@@ -23,7 +23,7 @@
 
   function init() {
 
-    const MODEL_PATH = './assets/PyramidSetup.glb';
+    const MODEL_PATH = './assets/PyramidSetup.gltf';
     const canvas = document.querySelector('#c');
     const backgroundColor = 0x000000;
 
@@ -91,7 +91,7 @@
         });
 
         model.scale.set(2, 2, 2);
-        model.position.set(0, 0, -2.5);
+        model.position.set(0, 0, 0);
 
         scene.add(model);
 

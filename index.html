@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    
-    <title>IAD - Interactive Art Discovery</title>   
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet"> 
-</head>
+        <!-- CSS TAILWIND -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
 
-<body>
-    <h1 class="m-3">IAD - Interactive Art Discovery</h1>
+        <title>IAD - Interactive Art Discovery</title>
 
-    <div class="loading" id="js-loader">
-        <div class="loader"></div>
-    </div>
-    <div class="wrapper">
-        <!-- The canvas element is used to draw the 3D scene -->
-        <canvas id="c"></canvas>
-    </div>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    </head>
 
-    <!-- THREE JS -->
-    <script src="https://unpkg.com/three@0.126.1/build/three.js"></script>
+    <body>
+        <h1 class="m-4 text-center text-lg">IAD - Interactive Art Discovery</h1>
 
-    <!-- GLTF -->
-    <script src="./src/GLTFLoader.js"></script>
+        <div class="loading" id="js-loader">
+            <div class="loader"></div>
+        </div>
+        
+        <div class="wrapper">
+            <!-- The canvas element is used to draw the 3D scene -->
+            <canvas id="c"></canvas>
+        </div>
 
-    <!-- ORBIT CONTROLS -->
-    <script src="./src/OrbitControls.js"></script>
+        <!-- THREE JS -->
+        <script src="https://unpkg.com/three@0.126.1/build/three.js"></script>
 
-    <!-- SCRIPT SCENE -->
-    <script src="./script.js"></script>
+        <!-- GLTF -->
+        <script src="./src/GLTFLoader.js"></script>
 
-</body>
+        <!-- ORBIT CONTROLS -->
+        <script src="./src/OrbitControls.js"></script>
+
+        <!-- SCRIPT SCENE -->
+        <script src="./script.js"></script>
+
+    </body>
+
 </html>
